@@ -188,12 +188,31 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="CacheServices\CacheKeys.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\EventModelsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201705031751077_TablesInitiated.cs" />
+    <Compile Include="Migrations\201705031751077_TablesInitiated.Designer.cs">
+      <DependentUpon>201705031751077_TablesInitiated.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201705032008157_TimeImgAdded.cs" />
+    <Compile Include="Migrations\201705032008157_TimeImgAdded.Designer.cs">
+      <DependentUpon>201705032008157_TimeImgAdded.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201705032133507_genrevenueadded.cs" />
+    <Compile Include="Migrations\201705032133507_genrevenueadded.Designer.cs">
+      <DependentUpon>201705032133507_genrevenueadded.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201705032141514_timeadded.cs" />
+    <Compile Include="Migrations\201705032141514_timeadded.Designer.cs">
+      <DependentUpon>201705032141514_timeadded.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\EventModel.cs" />
     <Compile Include="Models\GenreModel.cs" />
@@ -210,6 +229,11 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\ice.jpg" />
+    <Content Include="Images\monstertrucks.jpg" />
+    <Content Include="Images\news2.jpg" />
+    <Content Include="Images\newspaper.jpg" />
+    <Content Include="Images\puppets.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
@@ -260,6 +284,11 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\EventModels\Create.cshtml" />
+    <Content Include="Views\EventModels\Delete.cshtml" />
+    <Content Include="Views\EventModels\Details.cshtml" />
+    <Content Include="Views\EventModels\Edit.cshtml" />
+    <Content Include="Views\EventModels\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -278,6 +307,20 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201705031751077_TablesInitiated.resx">
+      <DependentUpon>201705031751077_TablesInitiated.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705032008157_TimeImgAdded.resx">
+      <DependentUpon>201705032008157_TimeImgAdded.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705032133507_genrevenueadded.resx">
+      <DependentUpon>201705032133507_genrevenueadded.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705032141514_timeadded.resx">
+      <DependentUpon>201705032141514_timeadded.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

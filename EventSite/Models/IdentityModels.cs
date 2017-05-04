@@ -29,5 +29,10 @@ namespace EventSite.Models
         {
             return new ApplicationDbContext();
         }
+
+        public DbSet<VenueModel> Venues { get; set; }
+        public DbSet<GenreModel> Genres { get; set; }
+        public DbSet<EventModel> Events { get; set; }
+
     }
 }

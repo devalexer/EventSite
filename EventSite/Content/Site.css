@@ -3,6 +3,26 @@
     padding-bottom: 20px;
 }
 
+body.home {
+    background-image: url("/Images/ice.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#eventblock {
+    border: solid thin;
+    border-color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.jumbotron {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    min-height: 50em;
+    font-family: 'Courier New', Verdana;
+}
+
 /* Set padding to keep content from hitting the edges */
 .body-content {
     padding-left: 15px;
