@@ -212,12 +212,18 @@
     <Compile Include="Migrations\201705032141514_timeadded.Designer.cs">
       <DependentUpon>201705032141514_timeadded.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201705151502560_restarted.cs" />
+    <Compile Include="Migrations\201705151502560_restarted.Designer.cs">
+      <DependentUpon>201705151502560_restarted.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\EventModel.cs" />
     <Compile Include="Models\GenreModel.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\OrderModel.cs" />
+    <Compile Include="Models\TicketModel.cs" />
     <Compile Include="Models\VenueModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -320,6 +326,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201705032141514_timeadded.resx">
       <DependentUpon>201705032141514_timeadded.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705151502560_restarted.resx">
+      <DependentUpon>201705151502560_restarted.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
